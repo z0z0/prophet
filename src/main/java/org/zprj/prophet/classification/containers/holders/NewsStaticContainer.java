@@ -1,5 +1,6 @@
 package org.prng.prophet.classification.containers.holders;
 
+import org.prng.prophet.util.ProphetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ import org.slf4j.LoggerFactory;
  */
 public class NewsStaticContainer extends StaticCorpusContainer {
 
-    private static final String PATH    =   "/data/user_stream.json";
+    private static final String PATH    = ProphetUtil.NEWS_TRAINING;
     private static Logger logger = LoggerFactory.getLogger(NewsStaticContainer.class);
 
     protected NewsStaticContainer() {

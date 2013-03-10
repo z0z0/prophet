@@ -5,6 +5,7 @@ import org.prng.prophet.classification.containers.holders.NewsStaticContainer;
 import org.prng.prophet.classification.containers.holders.SpamStaticContainer;
 import org.prng.prophet.classification.filters.words.FilterChain;
 import org.prng.prophet.messages.ProphetTweet;
+import org.prng.prophet.util.ProphetUtil;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -13,36 +14,34 @@ import java.util.Random;
 
 /**
  * Created by IntelliJ IDEA.
- * User: shushumiga
+ * User: zorana
  * Date: Mar 9, 2013
  * Time: 11:27:01 AM
  * To change this template use File | Settings | File Templates.
  */
 public class ProphetApp {
 
-    public static FilterChain classificationFilter = new FilterChain("org.prng.prophet.classification.filters.words.SpecialCharacterFilter");
-    //public static FilterChain clusteringFilter = new FilterChain("filters.clustering");
+    public static FilterChain classificationFilter = new FilterChain(ProphetUtil.CLASSIFICATION_FILTER);
 
     public static void main(String[] args) {
 
-        ArrayList<String> newsCorpus = getCorpus("/data/user_stream.json");
-        ArrayList<String> spamCorpus = getCorpus("/data/spam_stream.json");
+        ArrayList<String> newsCorpus = getCorpus(ProphetUtil.NEWS_PATH);
+        ArrayList<String> spamCorpus = getCorpus(ProphetUtil.SPAM_PATH);
 
-        getSubsetCorpus(newsCorpus, "data/user_stream.json", 50000);
-        getSubsetCorpus(spamCorpus, "data/spam_stream.json", 50000);
+        getSubsetCorpus(newsCorpus, ProphetUtil.NEWS_TRAINING, ProphetUtil.NEWS_TRAINING_SIZE);
+        getSubsetCorpus(spamCorpus, ProphetUtil.SPAM_TRAINING, ProphetUtil.SPAM_TRAINING_SIZE);
 
         NewsStaticContainer newsContainer = NewsStaticContainer.getInstance();
-        System.out.println("NEWS WORDS COUNT: " + newsContainer.getWordsCount());
         SpamStaticContainer spamContainer = SpamStaticContainer.getInstance();
-        System.out.println("SPAM WORDS COUNT: " + spamContainer.getWordsCount());
 
-        ArrayList<String> spamTest = getTestCorpus(spamCorpus, 25000);
-        ArrayList<String> newsTest = getTestCorpus(newsCorpus, 25000);
+
+        ArrayList<String> spamTest = getTestCorpus(spamCorpus, ProphetUtil.SPAM_TEST_SIZE);
+        ArrayList<String> newsTest = getTestCorpus(newsCorpus, ProphetUtil.NEWS_TEST_SIZE);
 
         List<ArrayList<String>> containers = new ArrayList<ArrayList<String>>();
         containers.add(spamTest);
         containers.add(newsTest);
-        makeTestSet(containers, "data/test.json", (spamTest.size() + newsTest.size()));
+        makeTestSet(containers, ProphetUtil.TEST_DATA_PATH, (spamTest.size() + newsTest.size()));
         
 
         int news_count = 0;
@@ -51,7 +50,7 @@ public class ProphetApp {
         NaiveBayes nb = null;
         try {
             nb = new NaiveBayes();
-            BufferedReader input =  new BufferedReader(new FileReader("data/test.json"));
+            BufferedReader input =  new BufferedReader(new FileReader(ProphetUtil.TEST_DATA_PATH));
             String line = null;
             while((line = input.readLine()) != null) {
                 ProphetTweet tweet = new ProphetTweet(line);
@@ -66,9 +65,10 @@ public class ProphetApp {
                 }
             }
             input.close();
-            printError(news_count, spam_count, 25000, 25000, 50000, 50000);
+            printError(news_count, spam_count, ProphetUtil.NEWS_TEST_SIZE, ProphetUtil.SPAM_TEST_SIZE,
+                    ProphetUtil.NEWS_TRAINING_SIZE, ProphetUtil.SPAM_TRAINING_SIZE);
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
 
     }

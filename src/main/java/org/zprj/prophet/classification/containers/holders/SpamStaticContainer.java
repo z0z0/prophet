@@ -1,6 +1,7 @@
 package org.prng.prophet.classification.containers.holders;
 
 import org.apache.commons.lang.mutable.MutableDouble;
+import org.prng.prophet.util.ProphetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +17,7 @@ import java.util.Map;
  */
 public class SpamStaticContainer extends StaticCorpusContainer {
 
-    private static final String PATH    =   "/data/spam_stream.json";
+    private static final String PATH    = ProphetUtil.SPAM_TRAINING;
     private static Logger logger = LoggerFactory.getLogger(SpamStaticContainer.class);
 
     private SpamStaticContainer() {
