@@ -1,7 +1,7 @@
-package org.prng.prophet.classification.containers.holders;
+package org.zprj.prophet.classification.containers.holders;
 
 import org.apache.commons.lang.mutable.MutableDouble;
-import org.prng.prophet.util.ProphetUtil;
+import org.zprj.prophet.util.ProphetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 27.11.2011.
  * Time: 13.56.16
  * Load spam data as static corpus

@@ -1,6 +1,6 @@
-package org.prng.prophet.classification.containers.holders;
+package org.zprj.prophet.classification.containers.holders;
 
-import org.prng.prophet.classification.containers.holders.StaticCorpusContainer;
+import org.zprj.prophet.classification.containers.holders.StaticCorpusContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 04.01.2012.
  * Time: 21.36.56
  * To change this template use File | Settings | File Templates.

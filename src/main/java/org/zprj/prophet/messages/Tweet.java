@@ -1,11 +1,11 @@
-package org.prng.prophet.messages;
+package org.zprj.prophet.messages;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
  * Created by IntelliJ IDEA.
- * User: shushumiga
+ * User: zorana
  * Date: Mar 9, 2013
  * Time: 12:20:13 PM
  * To change this template use File | Settings | File Templates.

@@ -1,11 +1,11 @@
-package org.prng.prophet;
+package org.zprj.prophet;
 
-import org.prng.prophet.classification.NaiveBayes;
-import org.prng.prophet.classification.containers.holders.NewsStaticContainer;
-import org.prng.prophet.classification.containers.holders.SpamStaticContainer;
-import org.prng.prophet.classification.filters.words.FilterChain;
-import org.prng.prophet.messages.ProphetTweet;
-import org.prng.prophet.util.ProphetUtil;
+import org.zprj.prophet.classification.NaiveBayes;
+import org.zprj.prophet.classification.containers.holders.NewsStaticContainer;
+import org.zprj.prophet.classification.containers.holders.SpamStaticContainer;
+import org.zprj.prophet.classification.filters.words.FilterChain;
+import org.zprj.prophet.messages.ProphetTweet;
+import org.zprj.prophet.util.ProphetUtil;
 
 import java.io.*;
 import java.util.ArrayList;

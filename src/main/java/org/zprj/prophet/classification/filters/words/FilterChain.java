@@ -1,7 +1,7 @@
-package org.prng.prophet.classification.filters.words;
+package org.zprj.prophet.classification.filters.words;
 
-import org.prng.prophet.ProphetApp;
-import org.prng.prophet.classification.filters.*;
+import org.zprj.prophet.ProphetApp;
+import org.zprj.prophet.classification.filters.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * User: milicabogicevic
+ * User: zorana
  * Date: 06.01.2012.
  */
 public class FilterChain {

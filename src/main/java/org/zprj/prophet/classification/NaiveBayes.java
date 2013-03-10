@@ -1,9 +1,9 @@
-package org.prng.prophet.classification;
+package org.zprj.prophet.classification;
 
-import org.prng.prophet.util.ProphetUtil;
-import org.prng.prophet.classification.containers.holders.StaticContainerFactory;
-import org.prng.prophet.classification.containers.holders.StaticCorpusContainer;
-import org.prng.prophet.util.ProphetUtil;
+import org.zprj.prophet.util.ProphetUtil;
+import org.zprj.prophet.classification.containers.holders.StaticContainerFactory;
+import org.zprj.prophet.classification.containers.holders.StaticCorpusContainer;
+import org.zprj.prophet.util.ProphetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 20.12.2011.
  * Time: 19.42.34
  * Document classification with spam and news static holders.

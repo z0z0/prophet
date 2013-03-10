@@ -1,4 +1,4 @@
-package org.prng.prophet.util;
+package org.zprj.prophet.util;
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,5 +22,5 @@ public class ProphetUtil {
     public static final int SPAM_TEST_SIZE = DATA_SIZE - SPAM_TRAINING_SIZE;
     public static final int NEWS_TEST_SIZE = DATA_SIZE - NEWS_TRAINING_SIZE;
     public static final String TEST_DATA_PATH = "data/test.json".intern();
-    public static final String CLASSIFICATION_FILTER = "org.prng.prophet.classification.filters.words.SpecialCharacterFilter".intern();
+    public static final String CLASSIFICATION_FILTER = "org.zprj.prophet.classification.filters.words.SpecialCharacterFilter".intern();
 }

@@ -1,4 +1,4 @@
-package org.prng.prophet.classification.stemmer;
+package org.zprj.prophet.classification.stemmer;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

@@ -1,13 +1,13 @@
-package org.prng.prophet.classification.containers.holders;
+package org.zprj.prophet.classification.containers.holders;
 
-import org.prng.prophet.util.ProphetUtil;
+import org.zprj.prophet.util.ProphetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 27.11.2011.
  * Time: 13.56.02
  * Load news data as static corpus

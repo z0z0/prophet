@@ -1,16 +1,16 @@
-package org.prng.prophet.messages;
+package org.zprj.prophet.messages;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.prng.prophet.classification.filters.words.FilterChain;
-import org.prng.prophet.classification.stemmer.*;
+import org.zprj.prophet.classification.filters.words.FilterChain;
+import org.zprj.prophet.classification.stemmer.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
- * User: shushumiga
+ * User: zorana
  * Date: Mar 9, 2013
  * Time: 11:19:52 AM
  * To change this template use File | Settings | File Templates.

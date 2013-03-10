@@ -1,7 +1,7 @@
-package org.prng.prophet.classification.filters.words;
+package org.zprj.prophet.classification.filters.words;
 
 import org.apache.commons.io.FileUtils;
-import org.prng.prophet.classification.filters.ProphetFilter;
+import org.zprj.prophet.classification.filters.ProphetFilter;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 27.11.2011.
  * Time: 13.41.58
  * To change this template use File | Settings | File Templates.

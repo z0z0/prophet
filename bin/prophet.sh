@@ -8,7 +8,7 @@ CLASSPATH=$(echo $base_dir/target/*.jar $base_dir/lib/*.jar | tr " " :)
 USER_ARGS="$@"
 JVM_ARGS="-Xmx2048m -Xms512m"
 CLASSPATH="${CLASSPATH}:conf/"
-MAIN_CLASS="org.prng.prophet.ProphetApp"
+MAIN_CLASS="org.zprj.prophet.ProphetApp"
 
 # RUN APPLICATION
 echo "Starting: java -server -cp $CLASSPATH -Djava.library.path=${EXTERNAL_LIBS} ${JVM_ARGS} ${MAIN_CLASS} ${USER_ARGS}"

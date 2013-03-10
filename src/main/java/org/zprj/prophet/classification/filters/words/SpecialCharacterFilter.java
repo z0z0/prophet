@@ -1,10 +1,10 @@
-package org.prng.prophet.classification.filters.words;
+package org.zprj.prophet.classification.filters.words;
 
-import org.prng.prophet.classification.filters.ProphetFilter;
+import org.zprj.prophet.classification.filters.ProphetFilter;
 
 /**
  * Created by IntelliJ IDEA.
- * User: milicabogicevic
+ * User: zorana
  * Date: 06.01.2012.
  * Time: 16.40.58
  * To change this template use File | Settings | File Templates.

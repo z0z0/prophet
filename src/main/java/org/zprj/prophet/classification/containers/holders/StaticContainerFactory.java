@@ -1,14 +1,14 @@
-package org.prng.prophet.classification.containers.holders;
+package org.zprj.prophet.classification.containers.holders;
 
-import org.prng.prophet.classification.containers.holders.BritishWordsContainer;
-import org.prng.prophet.classification.containers.holders.NewsStaticContainer;
-import org.prng.prophet.classification.containers.holders.SpamStaticContainer;
-import org.prng.prophet.classification.containers.holders.StaticCorpusContainer;
-import org.prng.prophet.util.ProphetUtil;
+import org.zprj.prophet.classification.containers.holders.BritishWordsContainer;
+import org.zprj.prophet.classification.containers.holders.NewsStaticContainer;
+import org.zprj.prophet.classification.containers.holders.SpamStaticContainer;
+import org.zprj.prophet.classification.containers.holders.StaticCorpusContainer;
+import org.zprj.prophet.util.ProphetUtil;
 
 /**
  * Created by IntelliJ IDEA.
- * User: antomripmuk
+ * User: zorana
  * Date: 2/20/12
  * Time: 12:33 AM
  * To change this template use File | Settings | File Templates.
